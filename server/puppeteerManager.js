@@ -146,7 +146,7 @@ class PuppeteerManager {
                 // But this time, you retrieved the missing details for each book in a given frame of a web page.
                 // You then assigned these missing details to the booksDetails object.
                 try {
-                    this.booksDetails = JSON.parse(JSON.stringify(await frame.evalute((command) => {
+                    this.booksDetails = JSON.parse(JSON.stringify(await frame.evaluate((command) => {
                         try {
                             let item = document.querySelector(command.locatorCss);
                             let description = item.querySelector('.product_page > p:nth-child(3)').innerText.trim()

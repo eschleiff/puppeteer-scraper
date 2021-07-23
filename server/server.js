@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/api/books', async (req,res) => {
-    req.timeout(timeout)
+    req.setTimeout(timeout)
     try {
         let data = req.body
         console.log(req.body.url)
@@ -45,7 +45,7 @@ app.post('/api/books', async (req,res) => {
 });
 
 app.post('/api/booksDetails', async (req, res) => {
-    req.timeout(timeout)
+    req.setTimeout(timeout)
     try {
         let data = req.body
         console.log(req.body.url)
