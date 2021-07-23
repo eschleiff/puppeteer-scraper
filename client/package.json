@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "lowdb": "^2.1.0"
+    "esm": "^3.2.25",
+    "lowdb": "^1.0.0"
   }
 }
